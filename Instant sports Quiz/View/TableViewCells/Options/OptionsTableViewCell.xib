@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sen-Bold.ttf">
+            <string>Sen-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="OptionsTableViewCell" customModule="Instant_sports_Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-TJ-88g">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="109"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-g6-uIS">
+                                <rect key="frame" x="104" y="10" width="190" height="62"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzv-BC-MaK">
+                                        <rect key="frame" x="10" y="10" width="170" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-Uj-gCq">
+                                                <rect key="frame" x="81" y="13" width="8" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Sen-Bold" family="Sen" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Violet"/>
+                                        <constraints>
+                                            <constraint firstItem="1Fg-Uj-gCq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qzv-BC-MaK" secondAttribute="leading" constant="5" id="3w1-fB-CqZ"/>
+                                            <constraint firstAttribute="height" constant="42" id="BhW-3T-c3w"/>
+                                            <constraint firstAttribute="width" constant="170" id="Faz-on-T36"/>
+                                            <constraint firstItem="1Fg-Uj-gCq" firstAttribute="centerX" secondItem="qzv-BC-MaK" secondAttribute="centerX" id="JcQ-5I-MOW"/>
+                                            <constraint firstItem="1Fg-Uj-gCq" firstAttribute="centerY" secondItem="qzv-BC-MaK" secondAttribute="centerY" id="eIU-O6-2f9"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Fg-Uj-gCq" secondAttribute="trailing" constant="5" id="nnf-9p-gx6"/>
+                                            <constraint firstItem="1Fg-Uj-gCq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qzv-BC-MaK" secondAttribute="top" constant="2" id="t9B-rs-FRo"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Fg-Uj-gCq" secondAttribute="bottom" constant="2" id="tVF-ir-Rvp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="21"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qzv-BC-MaK" firstAttribute="centerY" secondItem="Pbe-g6-uIS" secondAttribute="centerY" id="6kP-5t-m0o"/>
+                                    <constraint firstAttribute="height" constant="62" id="L6y-dk-jdc"/>
+                                    <constraint firstAttribute="trailing" secondItem="qzv-BC-MaK" secondAttribute="trailing" constant="10" id="L9o-RA-8Kn"/>
+                                    <constraint firstItem="qzv-BC-MaK" firstAttribute="leading" secondItem="Pbe-g6-uIS" secondAttribute="leading" constant="10" id="LUt-0P-ChR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4.7000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-HP-lHq" userLabel="LineR" customClass="Gradient" customModule="Instant_sports_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="294" y="38.5" width="104" height="5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4.7000000000000002" id="gsZ-BR-Dy2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" name="Violet"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" name="lineGradient"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orF-ca-gvr" userLabel="LineL" customClass="Gradient" customModule="Instant_sports_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="38.5" width="104" height="5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4.7000000000000002" id="dX6-Hc-OqY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" name="Violet"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" name="lineGradient"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="orF-ca-gvr" firstAttribute="centerY" secondItem="Pbe-g6-uIS" secondAttribute="centerY" id="EeN-le-Pp1"/>
+                            <constraint firstItem="ASc-HP-lHq" firstAttribute="leading" secondItem="Pbe-g6-uIS" secondAttribute="trailing" id="HCh-Nr-QlB"/>
+                            <constraint firstItem="Pbe-g6-uIS" firstAttribute="centerX" secondItem="LQd-TJ-88g" secondAttribute="centerX" id="J9u-FC-z0Y"/>
+                            <constraint firstItem="Pbe-g6-uIS" firstAttribute="top" secondItem="LQd-TJ-88g" secondAttribute="top" constant="10" id="UnU-GE-FWn"/>
+                            <constraint firstItem="Pbe-g6-uIS" firstAttribute="leading" secondItem="orF-ca-gvr" secondAttribute="trailing" id="g1O-2b-Fea"/>
+                            <constraint firstItem="ASc-HP-lHq" firstAttribute="centerY" secondItem="Pbe-g6-uIS" secondAttribute="centerY" id="i22-se-bmp"/>
+                            <constraint firstAttribute="trailing" secondItem="ASc-HP-lHq" secondAttribute="trailing" id="lzk-i4-SvQ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pbe-g6-uIS" secondAttribute="bottom" constant="10" id="njh-BH-XrW"/>
+                            <constraint firstItem="orF-ca-gvr" firstAttribute="leading" secondItem="LQd-TJ-88g" secondAttribute="leading" id="qgt-39-JG5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LQd-TJ-88g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5lc-fP-jZU"/>
+                    <constraint firstItem="LQd-TJ-88g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LAb-Ux-tuC"/>
+                    <constraint firstAttribute="bottom" secondItem="LQd-TJ-88g" secondAttribute="bottom" id="Rhd-V8-KC5"/>
+                    <constraint firstAttribute="trailing" secondItem="LQd-TJ-88g" secondAttribute="trailing" id="Wdv-Je-bdc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="blueView" destination="qzv-BC-MaK" id="t4j-yp-Tr4"/>
+                <outlet property="centreView" destination="Pbe-g6-uIS" id="EaM-UC-PkZ"/>
+                <outlet property="lblPlayer" destination="1Fg-Uj-gCq" id="jnL-Vv-lAX"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="106.13839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Violet">
+            <color red="0.36470588235294116" green="0.37254901960784315" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lineGradient">
+            <color red="1" green="0.96470588235294119" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

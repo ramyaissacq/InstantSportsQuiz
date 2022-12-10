@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Paball_bg.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

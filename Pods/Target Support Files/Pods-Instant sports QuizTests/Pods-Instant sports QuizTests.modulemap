@@ -1,0 +1,6 @@
+framework module Pods_Instant_sports_QuizTests {
+  umbrella header "Pods-Instant sports QuizTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
