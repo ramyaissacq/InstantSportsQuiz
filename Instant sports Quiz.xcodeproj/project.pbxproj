@@ -88,6 +88,7 @@
 		AD6189F12944907200C9832F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6189EF2944907200C9832F /* SettingsTableViewCell.swift */; };
 		AD6189F22944907200C9832F /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6189F02944907200C9832F /* SettingsTableViewCell.xib */; };
 		AD6189F5294497B500C9832F /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6189F4294497B500C9832F /* RankingViewController.swift */; };
+		AD88316829484B5F009C0B3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD88316A29484B5F009C0B3F /* Localizable.strings */; };
 		AD9D5B202941B03E0022428A /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D5B1E2941B03E0022428A /* PlayerCollectionViewCell.swift */; };
 		AD9D5B212941B03E0022428A /* PlayerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9D5B1F2941B03E0022428A /* PlayerCollectionViewCell.xib */; };
 		AD9D5B272941B4ED0022428A /* PointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9D5B262941B4ED0022428A /* PointsView.xib */; };
@@ -212,6 +213,10 @@
 		AD6189EF2944907200C9832F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		AD6189F02944907200C9832F /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		AD6189F4294497B500C9832F /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		AD88316329484618009C0B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		AD88316529484649009C0B3F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		AD88316929484B5F009C0B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD88316B29484B61009C0B3F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AD9D5B1E2941B03E0022428A /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD9D5B1F2941B03E0022428A /* PlayerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD9D5B262941B4ED0022428A /* PointsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsView.xib; sourceTree = "<group>"; };
@@ -282,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0722562940866B009F929B /* AppDelegate.swift */,
+				AD88316A29484B5F009C0B3F /* Localizable.strings */,
 				AD0723182940CC9F009F929B /* Fonts */,
 				AD07228629409A4D009F929B /* API Manager */,
 				AD07229A29409A65009F929B /* Utilities */,
@@ -787,6 +793,7 @@
 				AD07231E2940CD76009F929B /* Sen-Regular.ttf in Resources */,
 				AD5062962941FFA80021BF6F /* QuestionTableViewCell.xib in Resources */,
 				AD0722EC29409A76009F929B /* Dialogs.storyboard in Resources */,
+				AD88316829484B5F009C0B3F /* Localizable.strings in Resources */,
 				AD50629B294217FA0021BF6F /* OptionsTableViewCell.xib in Resources */,
 				AD6189ED294470F200C9832F /* RankTableViewCell.xib in Resources */,
 				AD6189F22944907200C9832F /* SettingsTableViewCell.xib in Resources */,
@@ -1027,6 +1034,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD07225D2940866B009F929B /* Base */,
+				AD88316329484618009C0B3F /* en */,
+				AD88316529484649009C0B3F /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1058,6 +1067,15 @@
 				AD0722E129409A76009F929B /* Base */,
 			);
 			name = Dialogs.storyboard;
+			sourceTree = "<group>";
+		};
+		AD88316A29484B5F009C0B3F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD88316929484B5F009C0B3F /* en */,
+				AD88316B29484B61009C0B3F /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

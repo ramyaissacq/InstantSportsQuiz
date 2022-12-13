@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "0 pts"; ObjectID = "98P-nM-0OE"; */
+"98P-nM-0OE.text" = "0 pts";
+
+/* Class = "UILabel"; text = "Loading....Please wait"; ObjectID = "BXe-ac-1kT"; */
+"BXe-ac-1kT.text" = "Loading....Please wait";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "EbJ-og-ZKz"; */
+"EbJ-og-ZKz.normalTitle" = "CONFIRM";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "GiU-6s-xiu"; */
+"GiU-6s-xiu.text" = "1";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Gl7-ac-B9S"; */
+"Gl7-ac-B9S.text" = "Language";
+
+/* Class = "UIButton"; normalTitle = "START QUIZ"; ObjectID = "RKa-3K-Q02"; */
+"RKa-3K-Q02.normalTitle" = "START QUIZ";
+
+/* Class = "UILabel"; text = "中国人"; ObjectID = "Sle-sM-wOB"; */
+"Sle-sM-wOB.text" = "中国人";
+
+/* Class = "UISearchBar"; placeholder = "Find Top Player"; ObjectID = "Swl-34-fwH"; */
+"Swl-34-fwH.placeholder" = "Find Top Player";
+
+/* Class = "UILabel"; text = "CONGRATS"; ObjectID = "SxW-hV-y7g"; */
+"SxW-hV-y7g.text" = "CONGRATS";
+
+/* Class = "UILabel"; text = "Leadboard list"; ObjectID = "YhL-Dg-BDl"; */
+"YhL-Dg-BDl.text" = "Leadboard list";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "aQ6-YH-XOb"; */
+"aQ6-YH-XOb.text" = "English";
+
+/* Class = "UILabel"; text = "free coins!"; ObjectID = "dOI-35-sDM"; */
+"dOI-35-sDM.text" = "free coins!";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dT2-S6-5Na"; */
+"dT2-S6-5Na.text" = "0";
+
+/* Class = "UILabel"; text = "Guess the Player"; ObjectID = "fCM-rg-tF7"; */
+"fCM-rg-tF7.text" = "Guess the Player";
+
+/* Class = "UIButton"; normalTitle = "TAKE A NEW QUIZZ"; ObjectID = "gEX-YB-PGv"; */
+"gEX-YB-PGv.normalTitle" = "TAKE A NEW QUIZZ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "gje-UT-qRW"; */
+"gje-UT-qRW.text" = "0";
+
+/* Class = "UILabel"; text = "0 pts"; ObjectID = "iIC-wb-csX"; */
+"iIC-wb-csX.text" = "0 pts";
+
+/* Class = "UILabel"; text = "SHARE"; ObjectID = "nKe-JK-mmt"; */
+"nKe-JK-mmt.text" = "SHARE";
+
+/* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "tj3-sZ-wK7"; */
+"tj3-sZ-wK7.normalTitle" = "HOME";
+
+/* Class = "UILabel"; text = "You earned"; ObjectID = "umr-jG-ilT"; */
+"umr-jG-ilT.text" = "You earned";
+
+/* Class = "UISearchBar"; placeholder = "Find Top Player"; ObjectID = "wMP-I9-vmk"; */
+"wMP-I9-vmk.placeholder" = "Find Top Player";
+
+/* Class = "UILabel"; text = " "; ObjectID = "xaM-sQ-fym"; */
+"xaM-sQ-fym.text" = " ";

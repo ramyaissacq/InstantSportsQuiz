@@ -53,7 +53,9 @@ class OnboardingViewController: UIViewController {
         }
         else{
             Utility.gotoHome()
+            if Utility.getSettingsDateDiff() >= 4{
             Utility.callURlDetailsAPI()
+            }
         }
     }
     
@@ -82,7 +84,7 @@ extension OnboardingViewController:UICollectionViewDelegate,UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
-        let img = UIImage(named: "onboarding\(indexPath.row+1)")!
+        let img = UIImage(named: "onBoarding")!
         cell.pageControl.numberOfPages = titles.count
         cell.configureCell(title: titles[indexPath.row], description: descriptions[indexPath.row], image: img, index: indexPath.row)
         cell.callNext = {
@@ -93,7 +95,7 @@ extension OnboardingViewController:UICollectionViewDelegate,UICollectionViewData
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - Utility.getSafeArea())
     }
 }
 

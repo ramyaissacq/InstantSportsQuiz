@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Instant sports Quiz
+
+  Created by Remya on 12/13/22.
+  
+*/
+
+"Share" = "Share";
+"Privacy Policy" = "Privacy Policy";
+"Feedback" = "Feedback";
+"Rate Us" = "Rate Us";
+"Settings" = "Settings";
+"John" = "John";
+"Peter" = "Peter";
+"George" = "George";
+"Mary" = "Mary";
+"Leo" = "Leo";
+"Mathew" = "Mathew";
+"Jacob" = "Jacob";
+"Elza" = "Elza";
+"Sara" = "Sara";
+"Jude" = "Jude";
+"Luke" = "Luke";
+"QUIZ" = "QUIZ";
+"Height:" = "Height:";
+"Weight:" = "Weight:";
+"Country:" = "Country:";
+"Birthday:" = "Birthday:";
+"Ranking" = "Ranking";

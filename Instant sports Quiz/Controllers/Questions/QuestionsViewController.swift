@@ -55,8 +55,10 @@ class QuestionsViewController: BaseViewController {
         options = viewModel.getOptions(index: index)
         tableView.reloadData()
             tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+            selectedIndex = nil
         }
         else{
+            AppPreferences.setPoints(points: points)
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ThanksViewController") as! ThanksViewController
             vc.points = points
             self.navigationController?.pushViewController(vc, animated: true)

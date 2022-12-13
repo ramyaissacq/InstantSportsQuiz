@@ -14,8 +14,13 @@ class LaunchesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if Utility.getSettingsDateDiff() >= 4{
         callURlDetailsAPI()
         configureTimer()
+        }
+        else{
+            self.initialLoad()
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -75,7 +80,6 @@ class LaunchesViewController: UIViewController {
         }
         else{
             
-            
             if delegate?.getPhoneLanguage() == "zh"{
                 MOLHLanguage.setAppleLAnguageTo("zh-Hans")
                 MOLH.reset()
@@ -83,13 +87,12 @@ class LaunchesViewController: UIViewController {
             else{
                 delegate?.setupLaunch()
             }
-            
         }
     }
     
     func openWebViewWithBack(){
             let navigation = UINavigationController()
-            let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
             vc.urlString = AppPreferences.getMapObject()?.redirectUrl ?? ""
             vc.fromStart = true
             navigation.viewControllers = [vc]
@@ -99,7 +102,7 @@ class LaunchesViewController: UIViewController {
     
     func openWebview(url:String){
         let navigation = UINavigationController()
-        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
         vc.urlString = url
         vc.specialStart = true
         navigation.viewControllers = [vc]

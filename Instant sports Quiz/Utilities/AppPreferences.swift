@@ -10,9 +10,36 @@ class AppPreferences {
         case IsFirstRun = "IsFirstRun"
         case popupFrequency = "popupFrequency"
         case mapData = "mapData"
-         case isSearched = "isSearched"
+        case isSearched = "isSearched"
+        case points = "points"
+        case launchDate = "launchDate"
         
+    }
+    
+    class func setLaunchDate(date: String)
+    {
+        let userDefaults = UserDefaults.standard
+        userDefaults.setValue(date, forKey: Keys.launchDate.rawValue)
+    }
+    
+    class func getLaunchDate() -> String
+    {
+        let userDefaults = UserDefaults.standard
+        let value = userDefaults.string(forKey: Keys.launchDate.rawValue)
         
+        return value ?? ""
+        
+    }
+    
+    class func getPoints() -> Int{
+        let userDefaults = UserDefaults.standard
+        let value = userDefaults.integer(forKey: Keys.points.rawValue)
+        return value
+    }
+    
+    class func setPoints(points:Int){
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(points, forKey: Keys.points.rawValue)
     }
     
     class func setIsSearched(value: Bool)
@@ -85,49 +112,5 @@ class AppPreferences {
     
     
     
-    //    class func setToken(withToken token: String)
-    //    {
-    //        let userDefaults = UserDefaults.standard
-    //        userDefaults.setValue(token, forKey: Keys.token.rawValue)
-    //    }
-    //
-    //    class func getToken() -> String
-    //    {
-    //        let userDefaults = UserDefaults.standard
-    //        if let token = userDefaults.string(forKey: Keys.token.rawValue)
-    //        {
-    //            return token
-    //        }
-    //        return ""
-    //    }
-    //
-    //
-    //
-    //    class func setUserData(withUserData userData : User){
-    //        let userDefaults = UserDefaults.standard
-    //        userDefaults.set(userData.toDictionary(), forKey: Keys.userData.rawValue)
-    //    }
-    //
-    //    class func getUserData() -> User{
-    //        let userDefaults = UserDefaults.standard
-    //        if let userData = userDefaults.object(forKey: Keys.userData.rawValue) as? [String:Any]
-    //        {
-    //            let userDataModel = User.init(fromJson: JSON(userData))
-    //            return userDataModel
-    //        }
-    //        return User()
-    //    }
-    //
-    //    class func clearPreferences(clear: @escaping () -> Void)
-    //    {
-    //        let defaults = UserDefaults.standard
-    //        let dictionary = defaults.dictionaryRepresentation()
-    //        dictionary.keys.forEach { key in
-    //            if(key != Keys.APPLE_LANGUAGE_KEY.rawValue)
-    //            {
-    //                defaults.removeObject(forKey: key)
-    //            }
-    //        }
-    //        clear()
-    //    }
+   
 }

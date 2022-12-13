@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,7 +23,7 @@
         <!--Drop Down View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="DropDownViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DropDownViewController" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DropDownViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DropDownViewController" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FxE-FO-Xj8"/>
                         <viewControllerLayoutGuide type="bottom" id="Rlc-U1-1Sa"/>
@@ -104,7 +103,7 @@
         <!--Select Sports View Controller-->
         <scene sceneID="xcx-aH-W1c">
             <objects>
-                <viewController storyboardIdentifier="SelectSportsViewController" id="cWw-Tw-HgY" customClass="SelectSportsViewController" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectSportsViewController" id="cWw-Tw-HgY" customClass="SelectSportsViewController" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="75j-ek-Z4u"/>
                         <viewControllerLayoutGuide type="bottom" id="Q3w-Wf-l5h"/>
@@ -122,7 +121,7 @@
                                         <color key="textColor" name="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j34-D0-CxX" customClass="Gradient" customModule="Scoreo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j34-D0-CxX" customClass="Gradient" customModule="Instant_sports_Quiz" customModuleProvider="target">
                                         <rect key="frame" x="172" y="43" width="70" height="2"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -185,7 +184,7 @@
         <!--League Popup View Controller-->
         <scene sceneID="5Uc-Wo-lOX">
             <objects>
-                <viewController storyboardIdentifier="LeaguePopupViewController" modalPresentationStyle="overCurrentContext" id="QoV-VN-Nmq" customClass="LeaguePopupViewController" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeaguePopupViewController" modalPresentationStyle="overCurrentContext" id="QoV-VN-Nmq" customClass="LeaguePopupViewController" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XFI-yh-rsX"/>
                         <viewControllerLayoutGuide type="bottom" id="9Kd-w5-Yjh"/>
@@ -286,7 +285,7 @@
         <!--Successfull Dialog-->
         <scene sceneID="LT4-d8-eBe">
             <objects>
-                <viewController storyboardIdentifier="SuccessfullDialog" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qUz-93-lF8" customClass="SuccessfullDialog" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuccessfullDialog" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qUz-93-lF8" customClass="SuccessfullDialog" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BW0-GV-PqY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="252"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,7 +328,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="fHc-cw-ICE" firstAttribute="leading" secondItem="4Dd-oZ-E14" secondAttribute="leading" id="5w4-UW-iNV"/>
                                     <constraint firstItem="I9w-sx-h2e" firstAttribute="leading" secondItem="4Dd-oZ-E14" secondAttribute="leading" constant="40" id="E1d-bT-ORf"/>
@@ -352,7 +351,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="X">
                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                    <color key="baseForegroundColor" name="red1"/>
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="actionClose:" destination="qUz-93-lF8" eventType="touchUpInside" id="ppW-E7-NYy"/>
@@ -390,7 +389,7 @@
         <!--Match Options View Controller-->
         <scene sceneID="xgN-GS-seW">
             <objects>
-                <viewController storyboardIdentifier="MatchOptionsViewController" id="Di1-dM-wPa" customClass="MatchOptionsViewController" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchOptionsViewController" id="Di1-dM-wPa" customClass="MatchOptionsViewController" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vog-UI-Fyd"/>
                         <viewControllerLayoutGuide type="bottom" id="b4c-Yv-UGV"/>
@@ -556,7 +555,7 @@ Score</string>
         <!--Confirmation View Controller-->
         <scene sceneID="eZs-Dp-GQA">
             <objects>
-                <viewController storyboardIdentifier="ConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fXT-ze-58V" customClass="ConfirmationViewController" customModule="Scoreo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fXT-ze-58V" customClass="ConfirmationViewController" customModule="Instant_sports_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Edu-d9-JAb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,19 +647,16 @@ Score</string>
         <image name="pin" width="17" height="24"/>
         <image name="reminder" width="21" height="23.5"/>
         <namedColor name="AccentColor">
-            <color red="0.54117647058823526" green="0.89411764705882357" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.40392156862745099" green="0.76078431372549016" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backColor">
             <color red="0.16862745098039217" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gradient1">
-            <color red="0.54117647058823526" green="0.89411764705882357" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.058823529411764705" green="0.11372549019607843" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gradient2">
-            <color red="0.56470588235294117" green="0.90196078431372551" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="red1">
-            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textColor">
             <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -670,6 +666,9 @@ Score</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

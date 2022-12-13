@@ -398,10 +398,10 @@ class Utility: NSObject {
    }
     
     class func gotoHome(){
-        let kickOffNav = UIStoryboard(name: "KickOff", bundle: nil).instantiateViewController(withIdentifier: "KickOffNav")
+        let mainNav = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNavigation")
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = kickOffNav
+        appDelegate.window?.rootViewController = mainNav
     }
     
     
@@ -459,8 +459,8 @@ class Utility: NSObject {
     class func callURlDetailsAPI(){
         HomeAPI().getUrlInfo { response in
             DispatchQueue.main.async {
-            //KickOffViewController.urlDetails = response
-            //KickOffViewController.showPopup()
+            HomeViewController.urlDetails = response
+            HomeViewController.showPopup()
             }
         } failed: { _ in
             
@@ -481,6 +481,25 @@ class Utility: NSObject {
             let names = UIFont.fontNames(forFamilyName: familyName)
             print("Font Names = [\(names)]")
         }
+    }
+    
+    class func getSafeArea()->CGFloat{
+        let window = UIApplication.shared.windows.first
+        let topPadding = window?.safeAreaInsets.top ?? 0
+        let bottomPadding = window?.safeAreaInsets.bottom ?? 0
+        let total = topPadding + bottomPadding
+        return total
+    }
+    
+    class func getSettingsDateDiff() -> Int{
+        let launchDate = AppPreferences.getLaunchDate()
+        if launchDate.count > 0{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = Utility.dateFormat.ddMMyyyy.rawValue
+            let dt1 = dateFormatter.date(from: launchDate) ?? Date()
+           return Calendar.current.dateComponents([.day], from: dt1, to: Date()).day ?? 0
+        }
+        return 0
     }
     
 }

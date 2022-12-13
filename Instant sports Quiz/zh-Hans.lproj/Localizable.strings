@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Instant sports Quiz
+
+  Created by Remya on 12/13/22.
+  
+*/
+
+"Share" = "分享";
+"Privacy Policy" = "隐私政策";
+"Feedback" = "反馈";
+"Rate Us" = "评价我们";
+"Settings" = "设置";
+"John" = "宗何";
+"Peter" = "配特瑞";
+"George" = "解耦子";
+"Mary" = "玛丽亚";
+"Leo" = "琉";
+"Mathew" = "麽特";
+"Jacob" = "尬孔";
+"Elza" = "李子";
+"Sara" = "萨拉";
+"Jude" = "九德";
+"Luke" = "鲁克";
+"QUIZ" = "测验";
+"Height:" = "身高:";
+"Weight:" = "体重:";
+"Country:" = "国家:";
+"Birthday:" = "生日:";
+"Ranking" = "排名";

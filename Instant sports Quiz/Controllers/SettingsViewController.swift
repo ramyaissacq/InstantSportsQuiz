@@ -28,16 +28,6 @@ class SettingsViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
-    func initialSettings(){
-        self.navigationItem.titleView = getHeaderLabel(title: "Settings".localized)
-        setBackButton()
-        tableView.register(UINib(nibName: "SettingsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        resetViews()
-        
-       
-    }
-    
-    
     @IBAction func actionTapEnglish(_ sender: UITapGestureRecognizer) {
         lang = "en"
         resetViews()
@@ -53,7 +43,19 @@ class SettingsViewController: BaseViewController {
     }
     
     
-
+    func initialSettings(){
+        self.navigationItem.titleView = getHeaderLabel(title: "Settings".localized)
+        setBackButton()
+        tableView.register(UINib(nibName: "SettingsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        let points = AppPreferences.getPoints()
+        lblPoints.text = "\(points)"
+        if points > 0 {
+            lblRank.text = "35/100"
+        }
+        resetViews()
+    }
+    
+   
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
@@ -69,7 +71,7 @@ class SettingsViewController: BaseViewController {
     }
     
     func resetLanguage(){
-       // KickOffViewController.fromLanguage = true
+       HomeViewController.fromLanguage = true
         MOLHLanguage.setAppleLAnguageTo(lang)
         MOLH.reset()
     }

@@ -285,6 +285,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="fixedBirthday" destination="NQe-rJ-A7Z" id="GjW-Eh-zOK"/>
+                <outlet property="fixedCountry" destination="VF2-M5-udh" id="dLi-Wt-IFR"/>
+                <outlet property="fixedHeight" destination="yQM-T4-6nF" id="MKE-Gm-7by"/>
+                <outlet property="fixedWeight" destination="vLz-Y2-awT" id="xoP-7L-KAx"/>
                 <outlet property="imgPhoto" destination="Qoi-Ya-ONf" id="slj-53-0im"/>
                 <outlet property="lblBirthday" destination="D2E-lE-WWN" id="jf6-y0-sHR"/>
                 <outlet property="lblCountry" destination="zZx-yX-xFt" id="TaQ-1H-4Pr"/>

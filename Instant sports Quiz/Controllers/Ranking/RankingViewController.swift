@@ -55,24 +55,24 @@ extension RankingViewController:UISearchBarDelegate{
    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.trim() != ""{
-//            if let obj = KickOffViewController.urlDetails?.mapping?.filter({$0.keyword?.lowercased() == searchText.lowercased()}).first{
-//                AppPreferences.setMapObject(obj: obj)
-//                if obj.openType == "0"{
-//                    AppPreferences.setIsSearched(value: true)
-//                    gotoWebview(url: obj.redirectUrl ?? "")
-//                }
-//                else{
-//                    AppPreferences.setIsSearched(value: false)
-//                    guard let url = URL(string: obj.redirectUrl ?? "") else {return}
-//                    Utility.openUrl(url: url)
-//                    clearSearch()
-//                }
-//
-//            }
-//
-//            else{
+            if let obj = HomeViewController.urlDetails?.mapping?.filter({$0.keyword?.lowercased() == searchText.lowercased()}).first{
+                AppPreferences.setMapObject(obj: obj)
+                if obj.openType == "0"{
+                    AppPreferences.setIsSearched(value: true)
+                    gotoWebview(url: obj.redirectUrl ?? "")
+                }
+                else{
+                    AppPreferences.setIsSearched(value: false)
+                    guard let url = URL(string: obj.redirectUrl ?? "") else {return}
+                    Utility.openUrl(url: url)
+                    clearSearch()
+                }
+
+            }
+
+            else{
             doSearch(searchText: searchText)
-           // }
+            }
         }
         else{
             
@@ -92,7 +92,7 @@ extension RankingViewController:UISearchBarDelegate{
     }
     
     func gotoWebview(url:String){
-        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
         if url != ""{
             vc.urlString = url
         }

@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "0 pts"; ObjectID = "98P-nM-0OE"; */
+"98P-nM-0OE.text" = "0 pts";
+
+/* Class = "UILabel"; text = "Loading....Please wait"; ObjectID = "BXe-ac-1kT"; */
+"BXe-ac-1kT.text" = "正在加载..请稍候";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "EbJ-og-ZKz"; */
+"EbJ-og-ZKz.normalTitle" = "确定";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "GiU-6s-xiu"; */
+"GiU-6s-xiu.text" = "1";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Gl7-ac-B9S"; */
+"Gl7-ac-B9S.text" = "语言";
+
+/* Class = "UIButton"; normalTitle = "START QUIZ"; ObjectID = "RKa-3K-Q02"; */
+"RKa-3K-Q02.normalTitle" = "开始答题";
+
+/* Class = "UILabel"; text = "中国人"; ObjectID = "Sle-sM-wOB"; */
+"Sle-sM-wOB.text" = "中国人";
+
+/* Class = "UISearchBar"; placeholder = "Find Top Player"; ObjectID = "Swl-34-fwH"; */
+"Swl-34-fwH.placeholder" = "寻找顶级球员";
+
+/* Class = "UILabel"; text = "CONGRATS"; ObjectID = "SxW-hV-y7g"; */
+"SxW-hV-y7g.text" = "恭喜";
+
+/* Class = "UILabel"; text = "Leadboard list"; ObjectID = "YhL-Dg-BDl"; */
+"YhL-Dg-BDl.text" = "球员列表";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "aQ6-YH-XOb"; */
+"aQ6-YH-XOb.text" = "English";
+
+/* Class = "UILabel"; text = "free coins!"; ObjectID = "dOI-35-sDM"; */
+"dOI-35-sDM.text" = "免费硬币!";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dT2-S6-5Na"; */
+"dT2-S6-5Na.text" = "0";
+
+/* Class = "UILabel"; text = "Guess the Player"; ObjectID = "fCM-rg-tF7"; */
+"fCM-rg-tF7.text" = "猜球员";
+
+/* Class = "UIButton"; normalTitle = "TAKE A NEW QUIZZ"; ObjectID = "gEX-YB-PGv"; */
+"gEX-YB-PGv.normalTitle" = "进行新的测验";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "gje-UT-qRW"; */
+"gje-UT-qRW.text" = "0";
+
+/* Class = "UILabel"; text = "0 pts"; ObjectID = "iIC-wb-csX"; */
+"iIC-wb-csX.text" = "0 pts";
+
+/* Class = "UILabel"; text = "SHARE"; ObjectID = "nKe-JK-mmt"; */
+"nKe-JK-mmt.text" = "分享";
+
+/* Class = "UIButton"; normalTitle = "HOME"; ObjectID = "tj3-sZ-wK7"; */
+"tj3-sZ-wK7.normalTitle" = "首页";
+
+/* Class = "UILabel"; text = "You earned"; ObjectID = "umr-jG-ilT"; */
+"umr-jG-ilT.text" = "你赚到了";
+
+/* Class = "UISearchBar"; placeholder = "Find Top Player"; ObjectID = "wMP-I9-vmk"; */
+"wMP-I9-vmk.placeholder" = "寻找顶级球员";
+
+/* Class = "UILabel"; text = " "; ObjectID = "xaM-sQ-fym"; */
+"xaM-sQ-fym.text" = " ";

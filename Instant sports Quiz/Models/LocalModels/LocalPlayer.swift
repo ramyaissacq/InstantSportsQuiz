@@ -17,7 +17,7 @@ class LocalPlayer{
     }
     
     static func getTopPlayers() -> [LocalPlayer]{
-        let names = ["John","Peter","George","Mary","Leo","Mathew","Jacob","Elza","Sara","Jude","Luke"]
+        let names = ["John".localized,"Peter".localized,"George".localized,"Mary".localized,"Leo".localized,"Mathew".localized,"Jacob".localized,"Elza".localized,"Sara".localized,"Jude".localized,"Luke".localized]
         let points = [1230,980,960,860,830,810,790,780,740,650,600]
         var players = [LocalPlayer]()
         for i in 0...names.count-1{

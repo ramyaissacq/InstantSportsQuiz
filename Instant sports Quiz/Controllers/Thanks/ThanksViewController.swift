@@ -17,9 +17,16 @@ class ThanksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblCoins.text = "\(points)"
+        initialSettings()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func initialSettings(){
+        lblCoins.text = "\(points)"
+        if Utility.getCurrentLang() == "cn"{
+            imgFinish.image = UIImage(named: "finishCN")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

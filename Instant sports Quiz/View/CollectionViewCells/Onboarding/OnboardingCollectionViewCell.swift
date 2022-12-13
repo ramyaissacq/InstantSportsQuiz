@@ -31,8 +31,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        let gradient = btnNext.getGradientLayer(bounds: btnNext.bounds)
-        btnNext.backgroundColor = btnNext.gradientColor(bounds: btnNext.bounds, gradientLayer: gradient)
+       
     }
     
     func configureCell(title:String,description:String,image:UIImage,index:Int){
@@ -45,7 +44,9 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     
     @IBAction func actionSkip(){
         Utility.gotoHome()
+        if Utility.getSettingsDateDiff() >= 4{
         Utility.callURlDetailsAPI()
+        }
        // callSkip?()
     }
     
