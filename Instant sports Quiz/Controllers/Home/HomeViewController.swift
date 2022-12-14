@@ -84,8 +84,10 @@ class HomeViewController: BaseViewController {
         let leftBtn1 = getButton(image: UIImage(named: "home")!)
         if AppPreferences.getMapObject() != nil{
             let btn = getButton(image: UIImage(named: "next")!)
-            let gradient = btn.getGradientLayer(bounds: btn.bounds)
-            btn.backgroundColor = btn.gradientColor(bounds: btn.bounds, gradientLayer: gradient)
+            //let gradient = btn.getGradientLayer(bounds: btn.bounds)
+            btn.backgroundColor = Colors.accentColor()
+            btn.cornerRadius = 4
+            //btn.gradientColor(bounds: btn.bounds, gradientLayer: gradient)
             btn.addTarget(self, action: #selector(specialButtonAction), for: .touchUpInside)
             self.navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: btn),UIBarButtonItem(customView:  leftBtn1)]
         }
@@ -164,7 +166,8 @@ class HomeViewController: BaseViewController {
         //
         if HomeViewController.fromLanguage{
             HomeViewController.fromLanguage = false
-            configureTimer()
+            //timer.invalidate()
+            //configureTimer()
             return
         }
         if HomeViewController.popupFlag == 1{

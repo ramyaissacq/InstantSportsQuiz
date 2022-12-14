@@ -18,7 +18,7 @@ class Dialog: NSObject {
         attributes.displayDuration = .infinity
         attributes.scroll = .enabled(swipeable: false, pullbackAnimation: .easeOut)
         attributes.position = .center
-        attributes.screenInteraction = .dismiss
+        attributes.screenInteraction = .absorbTouches
         attributes.entryInteraction = .absorbTouches
         attributes.screenBackground = .color(color: EKColor(UIColor(white: 0.0, alpha: 0.6)))
         attributes.positionConstraints = .float
