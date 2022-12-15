@@ -60,7 +60,7 @@ class SettingsViewController: BaseViewController {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["remakereduce@gmail.com"])
+            mail.setToRecipients(["mary.porine@gmail.com"])
             //mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 
             present(mail, animated: true)
@@ -111,12 +111,12 @@ extension SettingsViewController:UITableViewDelegate,UITableViewDataSource{
         case 0:
             Utility.shareAction(text: "Install Instant Sports Quiz from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
         case 1:
-            Utility.openUrl(url: URL(string: "")!)
+            Utility.openUrl(url: URL(string: "https://instantsportsquiz.wordpress.com/2022/12/05/privacy-policy/")!)
         case 2:
             sendEmail()
             
         case 3:
-            Utility.rateApp(id: "")
+            Utility.rateApp(id: "1659817023")
         default:
             break
         }

@@ -29,6 +29,11 @@ class ThanksViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func actionShare(_ sender: UITapGestureRecognizer) {
+        Utility.shareAction(text: "Install Instant Sports Quiz from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -51,14 +56,6 @@ class ThanksViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
