@@ -11,8 +11,6 @@ import SwiftyJSON
 class HomeAPI: WebService {
    
     
-    
-    
     func getUrlInfo(completion:@escaping (UrlDetails) -> Void, failed: @escaping (String) -> Void){
         //https://app.8com.cloud/api/v1/setting.php
         //https://app.8com.cloud/api/v1/setting

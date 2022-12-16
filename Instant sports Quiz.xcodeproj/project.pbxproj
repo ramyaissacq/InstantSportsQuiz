@@ -96,6 +96,7 @@
 		AD9D5B2D2941BBF00022428A /* LocalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D5B2C2941BBF00022428A /* LocalPlayer.swift */; };
 		ADD6EFFA29433FA80071C2D7 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6EFF929433FA80071C2D7 /* QuestionsViewModel.swift */; };
 		ADD6EFFD294356A00071C2D7 /* quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = ADD6EFFC2943569F0071C2D7 /* quiz.json */; };
+		ADEB7DE2294C4EC2002E21C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADEB7DE4294C4EC2002E21C6 /* InfoPlist.strings */; };
 		ADFE477F2944AAF4004AC954 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE477E2944AAF4004AC954 /* SettingsViewController.swift */; };
 		ADFE47822944B518004AC954 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE47812944B518004AC954 /* OnboardingViewController.swift */; };
 		ADFE47862944B554004AC954 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFE47842944B554004AC954 /* OnboardingCollectionViewCell.swift */; };
@@ -224,6 +225,8 @@
 		AD9D5B2C2941BBF00022428A /* LocalPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPlayer.swift; sourceTree = "<group>"; };
 		ADD6EFF929433FA80071C2D7 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		ADD6EFFC2943569F0071C2D7 /* quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quiz.json; sourceTree = "<group>"; };
+		ADEB7DE3294C4EC2002E21C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADEB7DE5294C4EC6002E21C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		ADFE477E2944AAF4004AC954 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ADFE47812944B518004AC954 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		ADFE47842944B554004AC954 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -287,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0722562940866B009F929B /* AppDelegate.swift */,
+				ADEB7DE4294C4EC2002E21C6 /* InfoPlist.strings */,
 				AD88316A29484B5F009C0B3F /* Localizable.strings */,
 				AD0723182940CC9F009F929B /* Fonts */,
 				AD07228629409A4D009F929B /* API Manager */,
@@ -790,6 +794,7 @@
 				ADD6EFFD294356A00071C2D7 /* quiz.json in Resources */,
 				AD07231D2940CD76009F929B /* Sen-Bold.ttf in Resources */,
 				AD07231C2940CD76009F929B /* Sen-ExtraBold.ttf in Resources */,
+				ADEB7DE2294C4EC2002E21C6 /* InfoPlist.strings in Resources */,
 				AD07231E2940CD76009F929B /* Sen-Regular.ttf in Resources */,
 				AD5062962941FFA80021BF6F /* QuestionTableViewCell.xib in Resources */,
 				AD0722EC29409A76009F929B /* Dialogs.storyboard in Resources */,
@@ -1078,6 +1083,15 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		ADEB7DE4294C4EC2002E21C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADEB7DE3294C4EC2002E21C6 /* en */,
+				ADEB7DE5294C4EC6002E21C6 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1212,13 +1226,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.instantSports.Instant-sports-Quiz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instant.sports.quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1243,13 +1258,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.instantSports.Instant-sports-Quiz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instant.sports.quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

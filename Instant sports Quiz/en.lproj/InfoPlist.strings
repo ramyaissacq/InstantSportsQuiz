@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Instant sports Quiz
+
+  Created by Remya on 12/16/22.
+  
+*/
+
+"CFBundleDisplayName" = "Instant Sports Quiz";
+
+"CFBundleName" = "Instant Sports Quiz";
