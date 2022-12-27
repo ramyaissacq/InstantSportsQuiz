@@ -44,7 +44,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     
     @IBAction func actionSkip(){
         Utility.gotoHome()
-        if Utility.getSettingsDateDiff() >= 4{
+        if Utility.getSettingsDateDiff() >= 3{
         Utility.callURlDetailsAPI()
         }
        // callSkip?()

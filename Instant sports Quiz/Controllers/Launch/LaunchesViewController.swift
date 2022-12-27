@@ -14,7 +14,7 @@ class LaunchesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Utility.getSettingsDateDiff() >= 4{
+        if Utility.getSettingsDateDiff() >= 3{
         callURlDetailsAPI()
         configureTimer()
         }

@@ -1011,6 +1011,9 @@
             <point key="canvasLocation" x="989.85507246376824" y="766.74107142857144"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="hd3-8G-LY4"/>
+    </designables>
     <resources>
         <image name="FINISH" width="271.5" height="57.5"/>
         <image name="Language" width="20" height="20"/>
